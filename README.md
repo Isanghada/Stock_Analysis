@@ -29,7 +29,7 @@
   - ㅇㅅㅇ
 
 ### 개발 환경
-- 언어 : Python, MariaDB
+- 언어 : Python, MariaDB(SQL)
 - 라이브러리 : **Pandas**, **Numpy**, **BeautifulSoup4**, **Scikit-Learn**, **Tensorflow**
 - 알고리즘 : ㅇㅅㅇ
 
