@@ -30,7 +30,7 @@
 
 ### 개발 환경
 - 언어 : Python, MariaDB(SQL)
-- 라이브러리 : **Pandas**, **Numpy**, **BeautifulSoup4**, **Scikit-Learn**, **Tensorflow**
+- 라이브러리 : **Pandas**, **Numpy**, **Pandas**, **Plotly**, **BeautifulSoup4**, **Scikit-Learn**, **Tensorflow**
 - 알고리즘 : ㅇㅅㅇ
 
 ## 2. 데이터 수집 및 전처리
