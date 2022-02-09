@@ -1,7 +1,9 @@
 # 📈주식 분석 및 예측 프로젝트
 ## Introduction
-- ㅇㅅㅇ
-- 구현 결과
+- 주식 데이터 분석 및 예측을 통한 정보 제공을 목적으로 진행한 프로젝트입니다.
+- 시작가, 저가, 고가, 종가, 거래량 등의 컬럼을 통해 분석하고 시계열 예측을 통해 종가 예측을 진행한다.
+- 구현 결과  
+  ![image](https://user-images.githubusercontent.com/90487843/153156062-894cfee3-65c3-48f3-b9ab-70071770cf83.png)
 
 ## Contents
 - [1. 프로젝트 소개](#1-프로젝트-소개) 
@@ -30,7 +32,7 @@
 
 ### 개발 환경
 - 언어 : Python, MariaDB(SQL)
-- 라이브러리 : **Pandas**, **Numpy**, **Pandas**, **Plotly**, **BeautifulSoup4**, **Scikit-Learn**, **Tensorflow**
+- 라이브러리 : **Pandas**, **Numpy**, **Pandas**, **Plotly**, **BeautifulSoup4**, **Tensorflow**
 - 알고리즘 : ㅇㅅㅇ
 
 ## 2. 데이터 수집 및 전처리
