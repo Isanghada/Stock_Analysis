@@ -14,7 +14,7 @@
   - https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage
 - 주식 정보 : 네이버 주식 데이터
   - `https://finance.naver.com/item/sise_day.nhn?code=기업 코드`
-  - ex) https://finance.naver.com/item/sise_day.nhn?code=00000
+  - ex) https://finance.naver.com/item/sise_day.nhn?code=000020
 - 데이터 저장 : MariaDB를 활용하여 추출한 데이터 저장
 ---
 ### 3. app_bollingerband.py
