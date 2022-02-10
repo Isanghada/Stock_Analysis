@@ -29,8 +29,14 @@
 - 수행기간 : 3달 (2021년 3월 ~ 2021년 6월)
 - 목표 : 주식 정보 분석 및 종가 예측
 - 데이터
-  - KRX 상장 기업 코드 : 
-  - 네이버 주식 데이터
+  - KRX 상장 기업 코드 : <a href='https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage' target='_blink'>링크</a>  
+    
+    - 상장 기업 코드 전체를 EXCEL 파일로 획득
+  - 네이버 주식 데이터  
+    <img src="https://user-images.githubusercontent.com/90487843/153339087-ad9df838-4857-4af6-af1a-c598eecec720.png" width="70%" height="70%"> 
+    - `https://finance.naver.com/item/sise_day.nhn?code=기업 코드`
+    - ex) https://finance.naver.com/item/sise_day.nhn?code=000020
+    - BeautifulSoup를 이용해 각 기업의 주식 정보 획득
 
 ### 개발 환경
 - 언어 : Python, MariaDB(SQL)
