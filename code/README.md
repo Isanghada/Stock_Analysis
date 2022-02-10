@@ -11,7 +11,7 @@
   - 상장 기업 코드와 `BeautifulSoup`를 이용해 네이버 주식 데이터 추출
   - 추출 데이터 DB에 저장
 - 상장 기업 코드 : KRX 데이터
-  - https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage'
+  - https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage
 - 주식 정보 : 네이버 주식 데이터
   - `https://finance.naver.com/item/sise_day.nhn?code=기업 코드`
   - ex) https://finance.naver.com/item/sise_day.nhn?code=00000
