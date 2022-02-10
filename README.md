@@ -62,7 +62,7 @@
   - close : 종가
   - diff : 종가 차이
   - volume : 거래량  
-<img src="https://user-images.githubusercontent.com/90487843/153340914-0368579e-639e-4877-9147-55812a093b67.png" width="50%" height="50%">  
+    <img src="https://user-images.githubusercontent.com/90487843/153340914-0368579e-639e-4877-9147-55812a093b67.png" width="50%" height="50%">  
 
 ## 3. 모델링
 ### 이미지 특징 추출 및 유사도 측정
