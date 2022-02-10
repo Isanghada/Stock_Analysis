@@ -28,27 +28,24 @@
 - 구성인원 : 김남규, 최◯◯, 한◯◯
 - 수행기간 : 3달 (2021년 3월 ~ 2021년 6월)
 - 목표 : 주식 정보 분석 및 종가 예측
-- 데이터
-  - KRX 상장 기업 코드 : <a href='https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage' target='_blink'>링크</a>  
-    
-    - 상장 기업 코드 전체를 EXCEL 파일로 획득
-  - 네이버 주식 데이터  
-    <img src="https://user-images.githubusercontent.com/90487843/153339087-ad9df838-4857-4af6-af1a-c598eecec720.png" width="70%" height="70%"> 
-    - `https://finance.naver.com/item/sise_day.nhn?code=기업 코드`
-    - ex) https://finance.naver.com/item/sise_day.nhn?code=000020
-    - BeautifulSoup를 이용해 각 기업의 주식 정보 획득
+- 데이터 : KRX 상장 기업 코드, 네이버 주식 데이터
 
 ### 개발 환경
 - 언어 : Python, MariaDB(SQL)
 - 라이브러리 : **Pandas**, **Numpy**, **Pandas**, **Plotly**, **BeautifulSoup4**, **Tensorflow**
-- 알고리즘 : ㅇㅅㅇ
+- 알고리즘 : LSTM(시계열 예측)
 
 ## 2. 데이터 수집 및 전처리
-### 관광지 데이터
-#### ▪데이터 수집
-- ㅇㅅㅇ
-#### ▪데이터 전처리
-- ㅇㅅㅇ
+#### ▪KRX 상장 기업 코드
+  <img src="https://user-images.githubusercontent.com/90487843/153339736-92b65aa5-cddf-421a-bc2b-71335c6ac90e.png" width="70%" height="70%">  
+- <a href='https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage' target='_blink'>링크</a>    
+- 상장 기업 코드 전체를 EXCEL 파일로 획득
+#### ▪네이버 주식 데이터    
+  <img src="https://user-images.githubusercontent.com/90487843/153339087-ad9df838-4857-4af6-af1a-c598eecec720.png" width="70%" height="70%">    
+- `https://finance.naver.com/item/sise_day.nhn?code=기업 코드`
+- ex) https://finance.naver.com/item/sise_day.nhn?code=000020 
+- BeautifulSoup를 이용해 각 기업의 주식 정보 획득
+
 
 ## 3. 모델링
 ### 이미지 특징 추출 및 유사도 측정
