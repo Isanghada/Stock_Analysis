@@ -35,17 +35,35 @@
 - 라이브러리 : **Pandas**, **Numpy**, **Pandas**, **Plotly**, **BeautifulSoup4**, **Tensorflow**
 - 알고리즘 : LSTM(시계열 예측)
 
-## 2. 데이터 수집 및 전처리
+## 2. 데이터 수집 및 저장
 #### ▪KRX 상장 기업 코드
-  <img src="https://user-images.githubusercontent.com/90487843/153339736-92b65aa5-cddf-421a-bc2b-71335c6ac90e.png" width="70%" height="70%">  
-- <a href='https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage' target='_blink'>링크</a>    
-- 상장 기업 코드 전체를 EXCEL 파일로 획득
-#### ▪네이버 주식 데이터    
-  <img src="https://user-images.githubusercontent.com/90487843/153339087-ad9df838-4857-4af6-af1a-c598eecec720.png" width="70%" height="70%">    
-- `https://finance.naver.com/item/sise_day.nhn?code=기업 코드`
-- ex) https://finance.naver.com/item/sise_day.nhn?code=000020 
-- BeautifulSoup를 이용해 각 기업의 주식 정보 획득
+- https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage     
+- 상장 기업 코드 전체를 EXCEL 파일로 획득  
+<img src="https://user-images.githubusercontent.com/90487843/153339736-92b65aa5-cddf-421a-bc2b-71335c6ac90e.png" width="70%" height="70%">  
 
+#### ▪네이버 주식 데이터    
+- `https://finance.naver.com/item/sise_day.nhn?code=기업 코드`  
+- ex) https://finance.naver.com/item/sise_day.nhn?code=000020     
+- BeautifulSoup를 이용해 각 기업의 주식 정보 획득  
+<img src="https://user-images.githubusercontent.com/90487843/153339087-ad9df838-4857-4af6-af1a-c598eecec720.png" width="70%" height="70%">
+
+#### ▪데이터 저장
+- 상장 기업 코드와 주식 데이터는 DB에 저장
+- 상장 기업 코드
+  - code : 기업 코드
+  - company : 기업명
+  - last_update : 최근 업데이트 날짜  
+![company](https://user-images.githubusercontent.com/90487843/153340785-93862290-9bbf-41db-8654-357da75d32cd.png)
+- 주가 일일 정보   
+  - code : 기업 코드
+  - date : 날짜
+  - open : 시작가
+  - high : 고가
+  - low : 저가
+  - close : 종가
+  - diff : 종가 차이
+  - volume : 거래량  
+![daily](https://user-images.githubusercontent.com/90487843/153340914-0368579e-639e-4877-9147-55812a093b67.png)
 
 ## 3. 모델링
 ### 이미지 특징 추출 및 유사도 측정
