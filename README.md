@@ -127,8 +127,10 @@ for i in range(len(df.close)-1):
 df['MFR'] = df.PMF.rolling(window=10).sum() / df.NMF.rolling(window=10).sum()
 df['MFI10'] = 100 - 100 / (1 + df['MFR'])
 ```
+
 - 볼린저 밴드 차트를 이용해 추세 추종 기법 시각화  
 <img src = "https://user-images.githubusercontent.com/90487843/153736881-82bcb06e-8daa-4abf-8bf6-f680a4655282.png" width="70%" height="70%">
+
 ```python
 import plotly
 import plotly.subplots as sp
