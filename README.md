@@ -107,25 +107,26 @@ plotly_fig.update_layout(
 ### 추세 추종 기법
 - 컬럼들을 이용해 보조 지표 계산
   - DataFrame의 rolling을 이용해 이동평균 계산
-  ```python
-  df['MA20'] = df['close'].rolling(window=20).mean() 
-  df['stddev'] = df['close'].rolling(window=20).std() 
-  df['upper'] = df['MA20'] + (df['stddev'] * 2)
-  df['lower'] = df['MA20'] - (df['stddev'] * 2)
-  df['PB'] = (df['close'] - df['lower']) / (df['upper'] - df['lower'])
-  df['TP'] = (df['high'] + df['low'] + df['close']) / 3
-  df['PMF'] = 0
-  df['NMF'] = 0
-  for i in range(len(df.close)-1):
-      if df.TP.values[i] < df.TP.values[i+1]:
-          df.PMF.values[i+1] = df.TP.values[i+1] * df.volume.values[i+1]
-          df.NMF.values[i+1] = 0
-      else:
-          df.NMF.values[i+1] = df.TP.values[i+1] * df.volume.values[i+1]
-          df.PMF.values[i+1] = 0
-  df['MFR'] = df.PMF.rolling(window=10).sum() / df.NMF.rolling(window=10).sum()
-  df['MFI10'] = 100 - 100 / (1 + df['MFR'])
-  ```
+
+```python
+df['MA20'] = df['close'].rolling(window=20).mean() 
+df['stddev'] = df['close'].rolling(window=20).std() 
+df['upper'] = df['MA20'] + (df['stddev'] * 2)
+df['lower'] = df['MA20'] - (df['stddev'] * 2)
+df['PB'] = (df['close'] - df['lower']) / (df['upper'] - df['lower'])
+df['TP'] = (df['high'] + df['low'] + df['close']) / 3
+df['PMF'] = 0
+df['NMF'] = 0
+for i in range(len(df.close)-1):
+    if df.TP.values[i] < df.TP.values[i+1]:
+        df.PMF.values[i+1] = df.TP.values[i+1] * df.volume.values[i+1]
+        df.NMF.values[i+1] = 0
+    else:
+        df.NMF.values[i+1] = df.TP.values[i+1] * df.volume.values[i+1]
+        df.PMF.values[i+1] = 0
+df['MFR'] = df.PMF.rolling(window=10).sum() / df.NMF.rolling(window=10).sum()
+df['MFI10'] = 100 - 100 / (1 + df['MFR'])
+```
 - 볼린저 밴드 차트를 이용해 추세 추종 기법 시각화  
 <img src = "https://user-images.githubusercontent.com/90487843/153736881-82bcb06e-8daa-4abf-8bf6-f680a4655282.png" width="70%" height="70%">
 ```python
@@ -196,6 +197,7 @@ predict = round(float((raw_df.close[len(raw_df)-1] * pred_y[-1]) / dfy.close[len
 2. 분석 및 예측 결과 출력 : 캔들 차트, 볼린저 밴드 차트, 종가 예측
 
 <img src="https://user-images.githubusercontent.com/90487843/153810887-3a75569d-5d83-4974-82ca-9634f3b94618.png" width="85%" height = "85%">
+
 
 ## 5. 한계 및 보완점
 #### 🛠데이터
