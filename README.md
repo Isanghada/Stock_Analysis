@@ -24,7 +24,7 @@
 - 주식 분석 정보 제공을 통해 효율적인 투자가 가능해질 것
 
 ### 프로젝트 개요
-- 구성인원 : 김남규, 최◯◯, 한◯◯
+- 구성인원 : 김남규, 최원우, 한◯◯
 - 수행기간 : 3달 (2021년 3월 ~ 2021년 6월)
 - 목표 : 주식 정보 분석 및 종가 예측
 - 데이터 : KRX 상장 기업 코드, 네이버 주식 데이터
@@ -222,5 +222,5 @@ predict = round(float((raw_df.close[len(raw_df)-1] * pred_y[-1]) / dfy.close[len
 
 ## 7. 구성 인원
 - 김남규 : <a href = 'https://github.com/Isanghada' target='_blink'>Github</a>
-- 최◯◯
-- 한◯◯
+- 최원우
+- 한창재
